@@ -1,0 +1,203 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	line-height: 1.5;
+
+	font-feature-settings: "zero", "ss01";
+}
+body {
+	line-height: inherit;
+	padding: 12px 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-weight: 500;
+}
+
+h2 {
+	font-size: 1.3rem;
+}
+
+h3 {
+	font-size: 1.1rem;
+}
+
+h3:before {
+	content: '⇒ ';
+}
+
+ul,
+ol {
+	padding-left: 1.4rem;
+}
+
+.container {
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.nowrap	{
+	white-space: nowrap;
+}
+
+.brand {
+	display: flex;
+	align-items: center;
+
+	line-height: 1.2;
+	margin-bottom: 2rem;
+}
+
+.brand-photo {
+	display: inline-block;
+	vertical-align: top;
+
+	margin-right: 15px;
+
+	flex: 0 0 70px;
+	max-width: 70px;
+}
+
+.brand-photo-img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+
+	border-radius: 50%;
+}
+
+.brand-name {
+	margin: 0;
+	font-size: 22px;
+}
+
+.brand-hint {
+	display: block;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.brand-from {
+	font-weight: 500;
+}
+
+.brand-from-flag {
+	width: auto;
+	height: 15px;
+	vertical-align: top;
+	margin-top: 3px;
+}
+
+.brand-about {
+	font-size: 18px;
+}
+
+.brand-about-icon {
+	width: auto;
+    height: 30px;
+    vertical-align: top;
+    margin-top: -3px;
+}
+
+.brand-about-link {
+	font-weight: 500;
+}
+
+.section {
+	margin-bottom: 2rem;
+	padding-bottom: 1.4rem;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.footer {
+	margin-top: 3rem;
+	line-height: 1.2;
+	margin-bottom: 90px;
+}
+
+@media (min-width: 576px) {
+	.container {
+		margin-left: auto;
+		margin-right: auto;
+
+		width: 100%;
+		max-width: 540px;
+	}
+}
+
+@media (min-width: 768px) {
+	body {
+		padding: 20px 0;
+	}
+
+	.container {
+		max-width: 720px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.brand-about {
+		font-size: 24px;
+	}
+
+	.brand-about-icon {
+		height: 40px;
+		margin-top: 0;
+	}
+}
+
+@media (min-width: 992px) {
+	html {
+		font-size: 18px
+	}
+
+	.container {
+		max-width: 960px;
+	}
+
+	.section,
+	.brand-about {
+		max-width: 1000px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+
+	.brand-name {
+		font-size: 26px;
+	}
+
+	.brand-hint {
+		font-size: 17px;
+	}
+
+	.brand-about {
+		font-size: 28px;
+	}
+}
