@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Combine and sort CSS media queries online</title>
+	<meta name="description" content="PostCSS plugin for combine and sort CSS media queries with mobile first or desktop first methods">
+
+	<meta name="yandex-verification" content="3327eddbf25cd41b" />
+  <script type="module" crossorigin src="/assets/main-2gtzwIbH.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-BQ37z54V.css">
+</head>
+<body>
+
+	<header>
+		<h1>Combine and sort CSS media queries online</h1>
+		<p>PostCSS plugin for combine and sort <acronym title="Cascading Style Sheets" lang="en">CSS</acronym> media queries with <strong>mobile first</strong> or&nbsp;<strong>desktop first</strong> methods.</p>
+	</header>
+
+	<main>
+
+		<div class="sorting-controls">
+			<div class="methods-group">
+				<label class="method">
+					<input class="method__ctrl" type="radio" name="sorting_method" value="mobile-first" checked> <span class="method__name">Mobile First</span>
+				</label>
+				<label class="method">
+					<input class="method__ctrl" type="radio" name="sorting_method" value="desktop-first"> <span class="method__name">Desktop First</span>
+				</label>
+			</div>
+
+			<label class="method-config">
+				<input type="checkbox" name="unitlessMqAlwaysFirst" id="unitlessMqAlwaysFirst" value="yes"> Unitless media-query always first
+			</label>
+		</div>
+
+		<p>
+			<small>
+				postcss: <mark>8.5.8</mark>, postcss-sort-media-queries: <mark>6.0.0</mark>
+			</small>
+		</p>
+
+		<div class="combiner">
+			<textarea class="combiner__input" id="_source"></textarea>
+			<pre class="combiner__input" contenteditable><code id="_sorted" class="language-css"></code></pre>
+		</div>
+
+		<div class="text-content">
+			<h2>What does the plugin do?</h2>
+
+			<p>The plugin performs <strong>sorting</strong> and <strong>combining</strong> CSS media queries in two ways:</p>
+
+			<dl class="def-list">
+				<div class="def-item">
+					<dt class="def-termin">Mobile first</dt>
+					<dd class="def-description">A method for developing the interface, taking into account the fact that it will be used mainly on mobile devices. From mobile to desktop.</dd>
+				</div>
+				<div class="def-item">
+					<dt class="def-termin">Desktop first</dt>
+					<dd class="def-description">A method for developing the interface, taking into account the fact that it will be used mainly on desktops and large screens. From desktop to mobile.</dd>
+				</div>
+			</dl>
+
+			<h2>Combining CSS media queries</h2>
+
+			<p>Combining the same media queries into one turned out to be a side effect when developing the plugin, unexpected optimization 😉</p>
+
+			<h2>Thanks 💪</h2>
+
+			<p>
+				<a href="https://github.com/ai" target="_blank" rel="noopener">Andrey Sitnik</a>,
+				<a href="https://github.com/Lustmored" target="_blank" rel="noopener">Jakub Caban</a>,
+				<a href="https://github.com/Kassaila" target="_blank" rel="noopener">Dmytro Symonov</a>,
+				<a href="https://github.com/SassNinja" target="_blank" rel="noopener">Kai Falkowski</a>,
+				<a href="https://github.com/dutchenkoOleg" target="_blank" rel="noopener">Олег Дутченко</a>
+			</p>
+		</div>
+	</main>
+
+	<footer>
+		<nav>
+			<a class="nav-link nav-link--github" href="https://github.com/yunusga/postcss-sort-media-queries"
+				target="_blank" rel="noopener">GitHub</a> <a class="nav-link nav-link--npm"
+				href="https://www.npmjs.com/package/postcss-sort-media-queries" target="_blank" rel="noopener">NPM</a>
+		</nav>
+		<p><small>2021 © PostCSS sort media queries online by <a href="https://github.com/yunusga" target="_blank" rel="noopener">yunusga</a></small></p>
+	</footer>
+
+</body>
+</html>
