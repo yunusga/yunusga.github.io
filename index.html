@@ -46,25 +46,68 @@
 </head>
 <body>
 
-    <div itemtype="https://schema.org/Person" itemscope>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Юнус Газиев",
+            "jobTitle": "Веб-разработчик",
+            "image": "https://yunusga.uz/img/yunusgaziev.jpg",
+            "url": "https://yunusga.uz",
+            "email": "mailto:im@yunusga.uz",
+            "telephone": "+998 33 645-69-14",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Фергана",
+                "addressCountry": "Узбекистан"
+            },
+            "alumniOf": {
+                "@type": "EducationalOrganization",
+                "name": "ТУИТ Ферганский филиал"
+            },
+            "sameAs": [
+                "https://github.com/yunusga"
+            ],
+            "knowsAbout": [
+                "Вёрстка (LTR/RTL)",
+                "Доступность",
+                "WordPress",
+                "WooCommerce",
+                "Оптимизация производительности сайта"
+            ],
+            "skills": [
+                "Вёрстка (LTR/RTL)",
+                "Доступность",
+                "WordPress",
+                "WooCommerce",
+                "Оптимизация производительности сайта"
+            ]
+        }
+    </script>
 
-        <meta itemprop="gender" content="male">
-        <meta itemprop="url" content="https://yunusga.uz">
+    <div>
+        <h1>Юнус Газиев</h1>
 
-        <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress" tabindex="-1">
-            <meta itemprop="addressCountry" content="Узбекистан">
-            <meta itemprop="addressLocality" content="Фергана">
-		</div>
+        <p>Веб-разработчик из солнечного Узбекистана.</p>
 
-        <h1><span itemprop="givenName">Юнус</span> <span itemprop="familyName">Газиев</span></h1>
-
-        <p>Работаю в вебе с 2010 года. Прошёл огонь тех. поддержки, воды офисного планктона, и медные трубы аутсорсных галер</p>
+        <p>Работаю в вебе с 2010 года. Прошёл огонь тех. поддержки, воды офисного планктона, и медные трубы аутсорсных галер.</p>
 
         <p>© 2010-2025 -> Юнус Газиев</p>
 
     </div>
 
-    <noscript><img src="https://mc.yandex.ru/watch/54522817" style="position:absolute; left:-9999px;" alt="" /></noscript>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (() => {
+            if ( 'localhost' === window.location.hostname ) {
+                return;
+            }
+
+            (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.webvisor.org/metrika/tag_ww.js", "ym"); ym(54522817, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true });
+        })();
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/54522817" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 
     <script>
         (() => {
@@ -83,7 +126,7 @@
             ['click', 'scroll', 'keydown', 'mousemove'].forEach(eventType => {
                 window.addEventListener(eventType, loadRePlainWidget, { once: true });
             });
-        });
+        })();
 	</script>
 
 </body>
