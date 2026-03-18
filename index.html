@@ -3,44 +3,43 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta name="freelancehunt" content="da5e8e59f252f5b">
-	<meta name="yandex-verification" content="5880b6537ffb9c4d" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Юнус Газиев - веб-разработчик из солнечного Узбекистана</title>
 
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/fonts/jetbrains-mono/style.css">
-
-    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/jetbrains-mono/JetBrainsMono-Regular.woff2?v=2.304" crossorigin>
-    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/jetbrains-mono/JetBrainsMono-Bold.woff2?v=2.304" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="assets/fonts/martian-grotesk/variable/MartianGrotesk-VFVF.woff2?v=1.0.0" crossorigin>
 
     <style>
-        *,
-        *:before,
-        *:after {
-            min-width: 0;
-            min-height: 0;
-
-            box-sizing: border-box;
+        @font-face {
+            font-family: 'Martian Grotesk';
+            font-display: swap;
+            src: url('assets/fonts/martian-grotesk/variable/MartianGrotesk-VFVF.woff2?v=1.0.0') format('woff2');
+            font-weight: 100 1000; /* Th: 100, xLt: 200, Lt: 300, Rg: 400, Md: 500, (no 600), Bd: 700, xBd: 800, Bl: 900, Ult: 1000 */
+            font-stretch: 75% 200%; /* Cn: 75%,  Nr: 87.5%,  Std: 100%,  sWd: 112.5%,  Wd: 125%,  xWd: 150%,  uWd: 200% */
         }
 
         html,
         body {
             margin: 0;
             padding: 0;
+
+            text-wrap: pretty;
         }
 
         body {
-            font-family: 'JetBrains Mono', sans-serif;
+            font-family: 'Martian Grotesk', sans-serif;
             font-size: 1.125rem;
             line-height: 1.9375rem;
 
             padding: 1rem;
         }
 
-        h1 {
-            margin-block-start: 0;
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+           text-wrap: balance;
         }
     </style>
 </head>
@@ -92,42 +91,28 @@
 
         <p>Работаю в вебе с 2010 года. Прошёл огонь тех. поддержки, воды офисного планктона, и медные трубы аутсорсных галер.</p>
 
-        <p>© 2010-2025 -> Юнус Газиев</p>
+        <nav>
+            <a href="https://yunusga.uz/abc/">Алфавит</a>
+            -
+            <a href="https://yunusga.uz/postcss-sort-media-queries/">PostCSS Sort Media Queries</a>
+        </nav>
 
+        <p>© 2010-2026 - Юнус Газиев</p>
     </div>
 
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (() => {
-            if ( 'localhost' === window.location.hostname ) {
-                return;
-            }
-
-            (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.webvisor.org/metrika/tag_ww.js", "ym"); ym(54522817, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true });
-        })();
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/54522817" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
-
     <script>
-        (() => {
-            function loadRePlainWidget() {
-                if ( window.replainSettings ) {
-                    return;
-                }
+		(() => {
+			if (window.location.hostname !== 'localhost') {
+				let umami = document.createElement('script');
 
-                window.replainSettings = { id: '166f628c-63e1-49b0-a926-95387de8bcef' };
+				umami.src = 'https://cloud.umami.is/script.js';
+				umami.defer = true;
 
-                (function(u){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=u;
-                var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
-                })('https://widget.replain.cc/dist/client.js');
-            }
+				umami.setAttribute('data-website-id', 'fc8f3d96-d624-4229-99b9-a0bd43a2a0f4');
 
-            ['click', 'scroll', 'keydown', 'mousemove'].forEach(eventType => {
-                window.addEventListener(eventType, loadRePlainWidget, { once: true });
-            });
-        })();
+				document.head.appendChild(umami);
+			}
+		})();
 	</script>
-
 </body>
 </html>
